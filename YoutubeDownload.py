@@ -342,9 +342,9 @@ class YoutubeDownloader:
                         df = df.drop(index=index)
                         self.df = df
                         self.update()
-                        print("Audio downloaded successfully:", mp3_file_path)
+                        print(" downloaded successfully:", mp3_file_path)
                 except:
-                    print("Audio download failed", key['Title'])
+                    print(" download failed", key['Title'])
             elif key['FileType'] == 'mp4':
                 print('--------------------------------')
                 print(key['FileType'], key['url'])
@@ -354,9 +354,9 @@ class YoutubeDownloader:
                         df = df.drop(index=index)
                         self.df = df
                         self.update()
-                        print("Audio downloaded successfully:", mp4_file_path)
+                        print(" downloaded successfully:", mp4_file_path)
                 except:
-                    print("Audio download failed", key['Title'])
+                    print(" download failed", key['Title'])
 
     def GUI(self):
         # Label Frame
