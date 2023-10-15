@@ -155,6 +155,7 @@ class YoutubeDownloader:
 
             except:
                 try:
+                    video = YouTube(playlist_url)
                     print(video.title)
                     VideoData[video.title] = video.watch_url
 
